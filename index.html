@@ -1,6 +1,4 @@
-
-
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -31,329 +29,332 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <style>
-        nav .a{
-            cursor: pointer;
-        }
+    <!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-        nav .li{
-            cursor: pointer;
-        }
-    </style>
 </head>
 
 <body style="background-color: white;">
-   
+      <!-- Start of Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+    <a class="navbar-brand" href="#">
+        <img src="img/wordmark2.png" alt="Logo" style="height: 30px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" onclick="home()">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Courses
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" onclick="aws()">AWS Cloud</a></li>
+                    <li><a class="dropdown-item" onclick="ds()">Data Science</a></li>
+                    <li><a class="dropdown-item" onclick="uiux()">UI/UX</a></li>
+                    <li><a class="dropdown-item" onclick="cicsa()">CICSA</a></li>
+                    <li><a class="dropdown-item" onclick="ccna()">CCNA</a></li>
+                    <li><a class="dropdown-item" onclick="rhel()">RHEL LINUX</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="certificate()">Certificate</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://wa.me/9363097405">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- End of Navbar -->
 
-     <!--start of navbar-->
-     <nav class="navbar navbar-expand-lg navbar-light bg-light px-4"> <!-- Added px-4 for horizontal padding -->
-        <a class="navbar-brand" href="#">
-            <img src="img/wordmark2.png" alt="Logo" style="height: 30px;">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" onclick="home()">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Courses
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" onclick="aws()">AWS Cloud</a>
-                        <a class="dropdown-item" onclick="ds()">Data Science</a>
-                        <a class="dropdown-item" onclick="uiux()">UI/UX</a>
-                        <a class="dropdown-item" onclick="cicsa()">CICSA</a>
-                        <a class="dropdown-item" onclick="ccna()">CCNA</a>
-                        <a class="dropdown-item" onclick="rhel()">RHEL LINUX</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="certificate()">Certificate</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="9363097405">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    
-    <!--end of navbar-->
-    
+<br><br>
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5 mb-5" style="background-color: white;">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" style="min-height: 400px; position: relative;">
-                    <video class="position-absolute w-100" style="min-height: 500px; object-fit: cover; top: 50%; left: 50%; transform: translate(-50%, -50%);" autoplay loop muted>
-                        <source src="img/video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
-                    <div class="carousel-caption d-flex align-items-center justify-content-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0);">
-                        <div class="text-center">
-                            <i>
-                                <h1 class="display-8 text-white mb-md-4">" Get on the track <br><span style="color: #fd9200;">Never look back "</span> </h1>
-                            </i>
-                        </div>
+<div class="container-fluid p-0 pb-5 mb-5" style="background-color: white;">
+    <div class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="min-height: 400px; position: relative; display: flex;">
+                <div class="course-info" style="flex: 1; padding: 50px;">
+                    <h1 class="display-8 text-dark mb-md-4">RHEL LINUX</h1>
+                    <p class="text-dark mb-4 para">Master Linux with our RHEL course! Ideal for beginners and IT professionals, this program covers system administration, security, and troubleshooting. Gain practical skills through real-world scenarios and enhance your expertise in Red Hat environments. Join us to become a proficient Linux administrator!</p>
+                    
+                    <p class="text-dark"><strong>Duration:</strong> 8 Weeks</p>
+                    <p class="text-dark"><strong>Fees:</strong> $499</p>
+                    <p class="text-dark"><strong>Language:</strong> Tamil</p>
+
+                    <a href="https://wa.me/9363097405" class="btn" style="background-color: #fd9200; color: white;">I'm Interested</a> <!-- Update with your WhatsApp number -->
+                    &nbsp;&nbsp;
+                    <a href="https://wa.me/9363097405" style="font-size: small;">Financial aid available</a>
+                    
+                    <!-- Small Course Image Below the Buttons -->
+                    <div class="mt-3 course-img">
+                        <img src="img/redhat.jpg" alt="Course Image" style="width: 50%; height: auto; object-fit: cover; border-radius: 20px;">
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Carousel End -->
- 
-   <!-- Courses Start -->
-<div class="container-fluid py-5" style="background-color: white;">
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px; color:#fd9200;">Courses</h5>
-            <h1>Our Popular Courses</h1>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card shadow-sm">
-                    <img class="img-fluid card-img-top" src="img/aws.webp" alt="">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">AWS Cloud</h5>
-                        <a class="btn" style="background-color: #fd9200; color: white;" onclick="aws()">View Course</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card shadow-sm">
-                    <img class="img-fluid card-img-top" src="img/data science.avif" alt=""  style="height: 240px;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Data Science</h5>
-                        <a class="btn" style="background-color: #fd9200; color: white;" onclick="ds()">View Course</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card shadow-sm">
-                    <img class="img-fluid card-img-top" src="img/uiux.avif" alt="">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">UI/UX</h5>
-                        <a class="btn" style="background-color: #fd9200; color: white;" onclick="uiux()">View Course</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card shadow-sm">
-                    <img class="img-fluid card-img-top" src="img/soc.png" alt="" style="height: 240px;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">CICSA</h5>
-                        <a class="btn" style="background-color: #fd9200; color: white;" onclick="cicsa()">View Course</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card shadow-sm">
-                    <img class="img-fluid card-img-top" src="img/ccna.avif" alt="" style="height: 240px;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">CCNA</h5>
-                        <a class="btn" style="background-color: #fd9200; color: white;" onclick="ccna()">View Course</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card shadow-sm">
-                    <img class="img-fluid card-img-top" src="img/redhat.jpg" alt="" style="height: 240px;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">RHEL LINUX</h5>
-                        <a class="btn" style="background-color: #fd9200; color: white;" onclick="rhel()">View Course</a>
-                    </div>
+                <div class="course-image" style="flex: 1;">
+                    <img src="img/wallpaper6.png" alt="Course Image" style="width: 100%; height: auto; object-fit: cover;">
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<div class="container py-5 module">
+    <h2 class="text-center mb-4">Red Hat Linux Administration Course</h2>
+    <div class="row">
+        <div class="col-lg-5">
+            <div class="accordion" id="moduleAccordion">
+                <!-- Module 1 -->
+                <div class="card">
+                    <div class="card-header" id="moduleOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span>Module 1: Introduction to Red Hat Linux</span>
+                                <span>+</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="moduleOne" data-parent="#moduleAccordion">
+                        <div class="card-body">
+                            - Overview of Linux and its distributions<br>
+                            - Introduction to Red Hat Enterprise Linux (RHEL)<br>
+                            - Installing RHEL and understanding the boot process
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Courses End -->
+                <!-- Module 2 -->
+                <div class="card">
+                    <div class="card-header" id="moduleTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span>Module 2: Command Line Basics</span>
+                                <span>+</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="moduleTwo" data-parent="#moduleAccordion">
+                        <div class="card-body">
+                            - Navigating the filesystem using the command line<br>
+                            - Understanding file permissions and ownership<br>
+                            - Commonly used command-line utilities
+                        </div>
+                    </div>
+                </div>
 
-     <!--icons-->
-     <div class="icon-container">
-        <div class="icon-item">
-            <i class="fas fa-user-graduate"></i>
-            <span>20+ Students</span>
-        </div>
-        <div class="icon-item">
-            <i class="fas fa-briefcase"></i>
-            <span>Career Opportunities</span>
-        </div>
-        <div class="icon-item">
-            <i class="fas fa-credit-card"></i>
-            <span>EMI Available</span>
-        </div>
-        <div class="icon-item">
-            <i class="fas fa-user"></i>
-            <span>Supportive Team</span>
-        </div>
-    </div>
-    <!--icons end-->
+                <!-- Module 3 -->
+                <div class="card">
+                    <div class="card-header" id="moduleThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span>Module 3: User and Group Management</span>
+                                <span>+</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="moduleThree" data-parent="#moduleAccordion">
+                        <div class="card-body">
+                            - Creating and managing users and groups<br>
+                            - Understanding user authentication methods<br>
+                            - Managing password policies and expiration
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Module 4 -->
+                <div class="card">
+                    <div class="card-header" id="moduleFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <span>Module 4: Filesystem Management</span>
+                                <span>+</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="moduleFour" data-parent="#moduleAccordion">
+                        <div class="card-body">
+                            - Understanding Linux filesystems<br>
+                            - Mounting and unmounting filesystems<br>
+                            - Disk partitioning and formatting
+                        </div>
+                    </div>
+                </div>
 
-     <!-- About Start -->
-<div class="container-fluid py-5" style="background-color: white;" id="about">
-    <div class="container py-5">
-        <div class="row align-items-center">
-            <div class="col-lg-5">
-                <img class="img-fluid rounded mb-4 mb-lg-0" src="img/about.png" alt="">
+                <!-- Module 5 -->
+                <div class="card">
+                    <div class="card-header" id="moduleFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <span>Module 5: Package Management</span>
+                                <span>+</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="moduleFive" data-parent="#moduleAccordion">
+                        <div class="card-body">
+                            - Using RPM and YUM for package management<br>
+                            - Installing, updating, and removing software<br>
+                            - Managing software repositories
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 6 -->
+                <div class="card">
+                    <div class="card-header" id="moduleSix">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <span>Module 6: System Administration Tasks</span>
+                                <span>+</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="moduleSix" data-parent="#moduleAccordion">
+                        <div class="card-body">
+                            - Managing system services and processes<br>
+                            - Understanding logs and log management<br>
+                            - Scheduling tasks with cron and at
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 7 -->
+                <div class="card">
+                    <div class="card-header" id="moduleSeven">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <span>Module 7: Networking and Firewall Configuration</span>
+                                <span>+</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="moduleSeven" data-parent="#moduleAccordion">
+                        <div class="card-body">
+                            - Configuring network interfaces<br>
+                            - Managing firewall settings with firewalld<br>
+                            - Troubleshooting network issues
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 8 -->
+                <div class="card">
+                    <div class="card-header" id="moduleEight">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                <span>Module 8: Security and SELinux</span>
+                                <span>+</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="moduleEight" data-parent="#moduleAccordion">
+                        <div class="card-body">
+                            - Understanding Linux security concepts<br>
+                            - Configuring and managing SELinux<br>
+                            - Implementing security best practices
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 9 -->
+                <div class="card">
+                    <div class="card-header" id="moduleNine">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                <span>Module 9: Virtualization with KVM</span>
+                                <span>+</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseNine" class="collapse" aria-labelledby="moduleNine" data-parent="#moduleAccordion">
+                        <div class="card-body">
+                            - Introduction to virtualization concepts<br>
+                            - Setting up and managing KVM<br>
+                            - Creating and managing virtual machines
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 10 -->
+                <div class="card">
+                    <div class="card-header" id="moduleTen">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                <span>Projects</span>
+                                <span>+</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTen" class="collapse" aria-labelledby="moduleTen" data-parent="#moduleAccordion">
+                        <div class="card-body">
+                            - Setting up a Red Hat environment<br>
+                            - Implementing user and group management<br>
+                            - Configuring a web server and database
+                        </div>
+                    </div>
+                </div>
+           
+                   <!-- <div class="text-center mt-4 pdf">
+                        <a href="your-pdf-link.pdf" class="btn btn-primary" style="background-color: #fd9200; border-color: #fd9200;">Download Syllabus</a>
+                    </div>-->
+                </div>
             </div>
+            
             <div class="col-lg-7">
-                <div class="text-left mb-4">
-                    <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px; color:#fd9200;">About Us</h5>
-                    <h1>Innovative Way To Learn</h1>
-                </div>
-                <p>
-                    We are a group of friends dedicated to teaching IT job-related courses. Our focus is primarily on non-coding courses, although we do offer coding courses as well. Our mission is to enhance your computer skills and provide guidance to help you secure a job in the IT industry.
-                    
-                    We offer comprehensive placement assistance and are committed to improving your skills. Our team will also help you build an impressive LinkedIn profile and provide hands-on projects to further enhance your learning experience.
-                    
-                    Our platform is entirely online, ensuring that our mentors are available to support you 24/7. We also provide flexible EMI options for payment.
-                    
-                    <br><br>For more details, please feel free to contact us.
-                </p>
-                <a href="https://wa.me/9363097405" class="btn" style="background-color: #fd9200; color: white; py-md-2 px-md-4 font-weight-semi-bold mt-2">Contact Us</a>
-            </div>
-        </div>
-    </div>
-</div>
+                <div class="text-center mb-4">
+                    <img src="img/team-2.jpg" alt="Teacher" style="width: 100%; max-width: 300px; border-radius:10px;">
+                    <h5 class="mt-3">Nobel Rex [Mentor]</h5>
+                    <p class="text-muted">Nobel Rex is an AWS Certified Solutions Architect. He has a passion for teaching and has trained 10+ students in various cloud technologies. His real-world experience and hands-on approach make him a sought-after instructor.</p>
+                    <div class="social-icons">
+                        <a href="#" class="mr-3"><i class="fab fa-facebook-f" style="color: #fd9200;"></i></a>
+                        <a href="#" class="mr-3"><i class="fab fa-twitter" style="color: #fd9200;"></i></a>
+                        <a href="#" class="mr-3"><i class="fab fa-linkedin-in" style="color: #fd9200;"></i></a>
+                    </div>
 
-    <!-- About End -->
-
-   <!-- Team Start -->
-   <div class="container-fluid py-5" style="background-color: white;">
-    <div class="container pt-5 pb-3">
-        <div class="text-center mb-5">
-            <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px; color:#fd9200;">Teachers</h5>
-            <h1>Meet Our Teachers</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-3 text-center team mb-4">
-                <div class="team-item rounded overflow-hidden mb-2">
-                    <div class="team-img position-relative">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        <div class="team-social">
-                            <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="mt-4">
+                        <h4 class="mt-3">Certificate Preview</h4>
+                        <img src="img/demo certificate.png" alt="Certificate Demo" style="width: 100%; max-width: 300px; border-radius: 10px;">
+                        <h6 class="mt-3">Category</h6>
+                        <div class="d-flex justify-content-center">
+                            <span class="badge bg text-white mx-1" style="background-color: #fd9200;">Beginner</span>
+                            <span class="badge bg text-white mx-1" style="background-color: #fd9200;">Intermediate</span>
+                            <span class="badge bg text-white mx-1" style="background-color: #fd9200;">Professional</span>
                         </div>
-                    </div>
-                    <div class="bg-secondary-white p-4">
-                        <h5>Nobel Rex</h5>
-                        <p class="m-0">Cloud Engineer</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 text-center team mb-4">
-                <div class="team-item rounded overflow-hidden mb-2">
-                    <div class="team-img position-relative">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        <div class="team-social">
-                            <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="bg-secondary-white p-4">
-                        <h5>Bharathi Kannan</h5>
-                        <p class="m-0">Cyber-Security researcher</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 text-center team mb-4">
-                <div class="team-item rounded overflow-hidden mb-2">
-                    <div class="team-img position-relative">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        <div class="team-social">
-                            <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="bg-secondary-white p-4">
-                        <h5>Manish Yashwant</h5>
-                        <p class="m-0">Data Scientist</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 text-center team mb-4">
-                <div class="team-item rounded overflow-hidden mb-2">
-                    <div class="team-img position-relative">
-                        <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        <div class="team-social">
-                            <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="bg-secondary-white p-4">
-                        <h5>Sumaiya Sultan</h5>
-                        <p class="m-0">Data Science</p>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Team End -->
-
-<!-- Testimonial Start -->
-<div class="container-fluid py-5" style="background-color: white;">
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px; color: #fd9200;">Testimonial</h5>
-
-            <h1>What Our Students Say</h1>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="text-center">
-                        <i class="fa fa-3x fa-quote-left mb-4" style="color: #fd9200;"></i>
-                        <h4 class="font-weight-normal mb-4">
-                            "I was looking to switch careers, and the courses on this platform helped me land my first job in tech. The instructors were knowledgeable, and the hands-on projects made all the difference. I can't thank this platform enough for boosting my confidence and skills!"
-                        </h4>
-                        <h5 class="m-0">Jerome</h5>
-                        <span>SOC analyts</span>
-                    </div>
-                    <div class="text-center">
-                        <i class="fa fa-3x fa-quote-left mb-4" style="color: #fd9200;"></i>
-                        <h4 class="font-weight-normal mb-4">
-                            "The comprehensive curriculum and real-world applications offered by this platform truly set it apart. I especially appreciated the mentorship sessions, which provided invaluable insights into the industry. I completed my course and secured a position within three months!"
-                        </h4>
-                        <h5 class="m-0">Lifan</h5>
-                        <span>UI/UX</span>
-                    </div>
-                    <div class="text-center">
-                        <i class="fa fa-3x fa-quote-left mb-4" style="color: #fd9200;"></i>
-                        <h4 class="font-weight-normal mb-4">
-                            "I had some basic coding knowledge but needed structured guidance. The interactive modules and community support were fantastic. I was able to build my portfolio and connect with potential employers through the platform's networking events. Highly recommended!"
-                        </h4>
-                        <h5 class="m-0">Shafrin Fathima</h5>
-                        <span>Network Engineer</span>
-                    </div>
-                </div>
-            </div>
+    <!-- Placement Assistance Section Start -->
+<div class="container py-5 placement">
+    <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+            <h2 class="text-dark mb-4 placement">Placement Assistance</h2>
+            <p class="text-dark mb-4">
+                "We do not offer guarantees like some institutions; however, we are committed to assisting you in your job search. Our dedicated team is here to provide you with the necessary resources and support to enhance your employability and connect you with potential employers."
+            </p>
+           
         </div>
     </div>
 </div>
+<!-- Placement Assistance Section End -->
 
 
-<!-- Back to Top -->
-<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" style="background-color: #fd9200; border: 0;"><i class="fa fa-angle-double-up"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" style="background-color: #fd9200; border: 0;"><i class="fa fa-angle-double-up"></i></a>
 
-<!-- Footer Start -->
+    <!-- Footer Start -->
 <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
     <div class="row pt-5">
         <div class="col-lg-7 col-md-12">
@@ -386,17 +387,17 @@
         <div class="col-lg-5 col-md-12 mb-5">
             <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Sign Up</h5>
             <p class="mb-4">Join our course and shine your life!</p>
-            <form method="post" action="form.php" onsubmit="return showAlert()">
+            <form>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                    <input type="text" class="form-control" placeholder="Your Name" required>
                 </div><br>
                 <div class="form-group">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email Address" required>
+                    <input type="email" class="form-control" placeholder="Your Email Address" required>
                 </div><br>
                 <div class="form-group">
-                    <input type="number" class="form-control" name="phone" placeholder="Your Phone No" required>
+                    <input type="number" class="form-control" placeholder="Your Phone No" required>
                 </div><br>
-                <button type="submit" class="btn" style="background-color: #fd9200; color: white;">Sign Up</button>
+                <button class="btn" style="background-color: #fd9200; color: white;">Sign Up</button>
             </form>
         </div>
     </div>
@@ -427,11 +428,6 @@
 <script src="js/main.js"></script>
 
 <script>
-    function showAlert() {
-        alert("Thank you for your Interest!");
-        return true; // Allow form submission
-    }
-
     // Show button on scroll
     window.onscroll = function() {
         const button = document.querySelector('.back-to-top');
@@ -471,14 +467,112 @@
             window.location.href = "RHEL.html"; // Replace with your target URL
         }
 
-    function certificate() {
+        function certificate() {
             window.location.href = "certificateretrive.php"; // Replace with your target URL
         }
 
-        function home() {
+function home() {
             window.location.href = "index.html"; // Replace with your target URL
         }
+        window.onscroll = function() { stickyNavbar() };
+
+var navbar = document.querySelector(".navbar");
+var sticky = navbar.offsetTop;
+
+function stickyNavbar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 </script>
+
+<style>
+    .accordion .card {
+        border: 2px dashed #fd9200;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .accordion .btn-link {
+        color: #fd9200;
+        font-weight: bold;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+    }
+    .accordion .card-body {
+        background-color: #f8f9fa;
+        text-align: left;
+    }
+
+     /* Sticky Navbar */
+     .navbar {
+      position: relative;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: top 0.5s;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: white;
+    }
+
+    @media (max-width: 768px) {
+            .course-image img {
+               visibility: hidden;
+            }
+            .course-img {
+                width: 530px;
+            }
+            .text-dark, .text-muted {
+                font-size: 0.9rem; /* Adjust font size for mobile */
+            }
+
+            .para{
+                width: 290px;
+                text-align: left;
+                padding: 5px;
+                justify-content:center;
+                margin-left: -8px;
+            }
+
+            .module{
+                position: relative;
+                top: -100px;
+            }
+
+            .pdf{
+                padding: 20px;
+            }
+
+            .placement{
+                margin-top: -60px;
+            }
+
+            
+
+            .badge {
+                margin-top: 10px;
+            }
+
+            .display-8{
+                font-size: xx-large;
+                font-weight: bold;
+            }
+            
+            .placement{
+                font-size: x-large;
+            }
+        }
+</style>
+
 
 </body>
 </html>
